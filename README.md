@@ -17,7 +17,7 @@ Or add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-configcat-openfeature = "0.1"
+configcat-openfeature-provider = "0.1"
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ The `ConfigCatProvider` needs a pre-configured [ConfigCat Rust SDK](https://gith
 use std::time::Duration;
 use configcat::{Client, PollingMode};
 use open_feature::OpenFeature;
-use configcat_openfeature::ConfigCatProvider;
+use configcat_openfeature_provider::ConfigCatProvider;
 
 #[tokio::main]
 async fn main() {
