@@ -1,0 +1,19 @@
+[package]
+name = "configcat-openfeature-provider"
+description = "ConfigCat OpenFeature Provider for Rust"
+authors = ["ConfigCat"]
+homepage = "https://configcat.com"
+repository = "https://github.com/configcat/openfeature-rust"
+keywords = ["configcat", "feature-flag", "feature-toggle", "openfeature", "provider"]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+configcat = "0.1"
+open-feature = { version = "0.2", features = ["serde_json"] }
+async-trait = "0.1"
+serde_json = "1.0"
+
+[dev-dependencies]
+tokio = { version = "1.17.0", features = ["rt-multi-thread"] }
