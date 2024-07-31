@@ -10,7 +10,7 @@ This repository contains an OpenFeature provider that allows the usage of [Confi
 
 Run the following Cargo command in your project directory:
 ```shell
-cargo add configcat-openfeature
+cargo add configcat-openfeature-provider
 ```
 
 Or add the following to your `Cargo.toml`:
