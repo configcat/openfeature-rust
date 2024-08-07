@@ -27,7 +27,7 @@ In general, we follow the ["fork-and-pull" Git workflow](https://github.com/susa
 
 ## Build instructions
 
-This ConfigCat SDK builds with `cargo`.
+The project builds with `cargo`.
 
 ```bash
 cargo build
