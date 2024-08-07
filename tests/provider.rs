@@ -1,10 +1,19 @@
 use configcat::FileDataSource;
 use configcat::OverrideBehavior::LocalOnly;
 use configcat_openfeature_provider::ConfigCatProvider;
+use open_feature::provider::FeatureProvider;
 use open_feature::{
     EvaluationContext, EvaluationError, EvaluationErrorCode, EvaluationReason, OpenFeature,
     StructValue,
 };
+
+#[test]
+fn metadata() {
+    let configcat_client = create_client();
+    let provider = ConfigCatProvider::new(configcat_client);
+
+    assert_eq!("ConfigCatProvider", provider.metadata().name);
+}
 
 #[tokio::test]
 async fn eval_bool() {

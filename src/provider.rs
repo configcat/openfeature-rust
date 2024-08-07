@@ -6,7 +6,7 @@ use open_feature::{
     EvaluationReason, EvaluationResult, StructValue, Value,
 };
 
-const NAME: &str = "configcat";
+const NAME: &str = "ConfigCatProvider";
 
 /// The ConfigCat OpenFeature provider.
 ///
