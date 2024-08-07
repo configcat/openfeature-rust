@@ -36,7 +36,7 @@ async fn main() {
     let mut api = OpenFeature::singleton_mut().await;
 
     // Configure the ConfigCat SDK.
-    let configcat_client = Client::builder("sdk-key")
+    let configcat_client = Client::builder("<YOUR-CONFIGCAT-SDK-KEY>")
         .polling_mode(PollingMode::AutoPoll(Duration::from_secs(60)))
         .build()
         .unwrap();
