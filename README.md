@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/configcat/openfeature-rust/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/configcat/openfeature-rust/actions/workflows/ci.yml)
 [![crates.io](https://img.shields.io/crates/v/configcat-openfeature-provider.svg?logo=rust)](https://crates.io/crates/configcat-openfeature-provider)
-[![docs.rs](https://img.shields.io/badge/docs.rs-configcat-openfeature-provider-66c2a5?logo=docs.rs)](https://docs.rs/configcat-openfeature-provider)
+[![docs.rs](https://img.shields.io/badge/docs.rs-configcat_openfeature_provider-66c2a5?logo=docs.rs)](https://docs.rs/configcat-openfeature-provider)
 
 This repository contains an OpenFeature provider that allows [ConfigCat](https://configcat.com) to be used with the [OpenFeature Rust SDK](https://github.com/open-feature/rust-sdk).
 
