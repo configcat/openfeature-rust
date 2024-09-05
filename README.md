@@ -22,7 +22,7 @@ configcat-openfeature-provider = "0.1"
 
 ## Usage
 
-The `ConfigCatProvider` needs a pre-configured [ConfigCat Rust SDK](https://github.com/configcat/php-sdk) client:
+The `ConfigCatProvider` needs a pre-configured [ConfigCat Rust SDK](https://github.com/configcat/rust-sdk) client:
 
 ```rust
 use std::time::Duration;
