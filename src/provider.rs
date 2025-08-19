@@ -234,7 +234,7 @@ fn to_struct_details(
                 .build())
         }
     };
-    let val: Value =  json_val.try_into()?;
+    let val: Value = json_val.try_into()?;
     match val.as_struct() {
         Some(struct_val) => {
             let reason = construct_reason(details);
