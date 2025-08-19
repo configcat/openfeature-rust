@@ -234,11 +234,8 @@ fn to_struct_details(
                 .build())
         }
     };
-    let val: Value = match json_val.try_into() {
-        Ok(val) => val,
-        Err(err) => return Err(err),
-    };
-    return match val.as_struct() {
+    let val: Value =  json_val.try_into()?;
+    match val.as_struct() {
         Some(struct_val) => {
             let reason = construct_reason(details);
             Ok(ResolutionDetails {
@@ -252,7 +249,7 @@ fn to_struct_details(
             .code(EvaluationErrorCode::TypeMismatch)
             .message("Parsed value is not a StructValue")
             .build()),
-    };
+    }
 }
 
 fn to_res_error(err: &ClientError) -> EvaluationError {
