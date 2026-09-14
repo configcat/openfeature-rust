@@ -13,6 +13,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Set up Rust
-        uses: actions-rust-lang/setup-rust-toolchain@v1
+        uses: actions-rust-lang/setup-rust-toolchain@v2
       - name: Publish
         run: cargo publish --token ${{ secrets.CRATES_TOKEN }}
